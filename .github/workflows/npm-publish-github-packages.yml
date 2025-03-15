@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de Marketing - Impulsa tu Marca</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FAE3C6;
+            color: #4A3F35;
+            overflow-x: hidden;
+        }
+        header {
+            background: #E67E22;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+        header img {
+            width: 100px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #D35400;
+            padding: 15px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 25px;
+            margin: 0 15px;
+            font-size: 18px;
+            transition: background 0.3s ease;
+        }
+        nav a:hover {
+            background: #A04000;
+            border-radius: 5px;
+        }
+        .hero {
+            background-image: url('https://source.unsplash.com/1600x600/?digital-marketing,advertising');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 120px 20px;
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            animation: fadeIn 2s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 50px 0;
+        }
+        .section {
+            background: white;
+            padding: 40px;
+            margin: 30px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .carousel {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+            position: relative;
+        }
+        .carousel img {
+            width: 100%;
+            animation: slide 10s infinite;
+        }
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            33% { transform: translateX(-100%); }
+            66% { transform: translateX(-200%); }
+            100% { transform: translateX(0); }
+        }
+        .contact {
+            background: #E67E22;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        .contact form {
+            max-width: 500px;
+            margin: auto;
+        }
+        .contact input, .contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .contact button {
+            background: #A04000;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            transition: background 0.3s;
+        }
+        .contact button:hover {
+            background: #8A3200;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo de la Agencia">
+        <div>Agencia de Marketing</div>
+    </header>
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#blog">Blog</a>
+        <a href="#contacto">Contáctanos</a>
+    </nav>
+    
+    <div id="inicio" class="hero">Impulsamos tu marca al siguiente nivel</div>
+    
+    <div id="nosotros" class="section">
+        <h2>Nosotros</h2>
+        <p>Somos una agencia de marketing especializada en estrategias digitales y branding. Ayudamos a las empresas a destacar en el mercado con soluciones innovadoras.</p>
+    </div>
+    
+    <div id="servicios" class="section">
+        <h2>Nuestros Servicios</h2>
+        <div class="carousel">
+            <img src="https://source.unsplash.com/800x400/?marketing" alt="Marketing">
+            <img src="https://source.unsplash.com/800x400/?branding" alt="Branding">
+            <img src="https://source.unsplash.com/800x400/?advertising" alt="Publicidad">
+        </div>
+    </div>
+    
+    <div id="blog" class="section">
+        <h2>Blog</h2>
+        <a href="#">Cómo mejorar tu presencia en redes sociales</a>
+        <a href="#">SEO: Claves para aparecer en los primeros resultados</a>
+    </div>
+    
+    <div id="contacto" class="section contact">
+        <h2>Contáctanos</h2>
+        <p>Escríbenos a <strong>contacto@marketing.com</strong> o llámanos al <strong>3197574097</strong>.</p>
+        <form>
+            <input type="text" placeholder="Tu Nombre" required>
+            <input type="email" placeholder="Tu Correo" required>
+            <textarea placeholder="Tu Mensaje" rows="4" required></textarea>
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </div>
+</body>
+</html>
